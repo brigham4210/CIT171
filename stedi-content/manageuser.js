@@ -51,10 +51,10 @@ function userlogin(){
     setusername();
     $.ajax({
         type: 'POST',
-        url: 'https://dev.stedi.me/login',
+        url: 'https://dev.stedi.me/twofactorlogin/208-226-0144',
         data: JSON.stringify({userName, password}),
         success: function(data) {
-            window.location.href = "/timer.html#"+data;//add the token to the url
+            // window.location.href = "/timer.html#"+data;//add the token to the url
         },
         contentType: "application/text",
         dataType: 'text'
