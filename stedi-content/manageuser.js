@@ -51,9 +51,6 @@ function get_code(){
         type: 'POST',
         url: 'https://dev.stedi.me/twofactorlogin/' + userName,
         data: JSON.stringify({userName, password}),
-        //success: function(data) {
-        //    window.location.href = "/timer.html#"+data;//add the token to the url
-        //},
         contentType: "application/text",
         dataType: 'text'
     });
